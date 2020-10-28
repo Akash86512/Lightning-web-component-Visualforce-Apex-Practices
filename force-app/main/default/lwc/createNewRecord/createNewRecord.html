@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="LdsCreateRecord" icon-name="standard:record">
+       <div class="slds-m-around_medium">
+           <lightning-input label="Id" disabled value={accountId}></lightning-input>
+           <lightning-input label="Name" onchange={handleNameChange} class="slds-m-bottom_x-small"></lightning-input>
+           <lightning-button label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+       </div>
+       <div>
+        <a href={url} onclick={handleClick}>Account Home</a>
+    </div>
+
+    <div>
+        <a href={showPanelUrl} onclick={handleShowPanelClick}>Show Panel</a>
+    </div>
+    <div if:true={showPanel}>
+        <h1>This is the panel</h1>
+        <a href={noPanelUrl} onclick={handleNoPanelClick}>Hide Panel</a>
+    </div>
+    </lightning-card>
+
+    <lightning-card title="Navigation Service in Lightning Web Component">
+        <lightning-card title="Navigation to Record Page">
+            <lightning-button-group>
+                <lightning-button label="New Record Page" onclick={navigateToNewRecordPage}></lightning-button>
+                <lightning-button label="Edit Record Page" onclick={navigateToEditRecordPage}></lightning-button>
+                <lightning-button label="View Record Page" onclick={navigateToViewRecordPage}></lightning-button>
+            </lightning-button-group>
+        </lightning-card>
+    </lightning-card>  
+
+    
+</template> 

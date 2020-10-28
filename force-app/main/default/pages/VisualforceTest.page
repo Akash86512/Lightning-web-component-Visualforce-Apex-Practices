@@ -1,0 +1,36 @@
+<apex:page standardController="Customer__c" >
+    <apex:form>
+
+        <apex:pageBlock title="Customer Information">
+            <apex:pageBlockSection>
+                <apex:outputField label="CUSTOMER NAME :" value="{! Customer__c.Name }"/>
+                <apex:outputField label="ADDRESS :" value="{! Customer__c.Address__c }"/>
+                <apex:outputField label="EMAIL :" value="{! Customer__c.Email__c }"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Product Details">
+            <apex:pageBlockSection>
+                <apex:outputField label="PRODUCT NAME :" value="{! Customer__c.Product_Name__c }"/>
+                <apex:outputField label="PRODUCT COST :" value="{! Customer__c.Product_Cost__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Delivery Details">
+            <apex:pageBlockSection>
+                <apex:outputField label="DRIVER NAME :" value="{! Customer__c.Driver_Name__c }"/>
+                <apex:outputField label="DRIVER CHARGE :" value="{! Customer__c.Delivery_Charge__c }"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+        <apex:pageBlock title="Payment Details">
+            <apex:pageBlockSection>
+                <apex:outputField label="PRODUCT COST :" value="{! Customer__c.Product_Cost__c}"/>
+                <apex:outputField label="DELIVERY CHARGE :" value="{! Customer__c.Delivery_Charge__c }"/>
+                <apex:outputField label="TOTAL COST :" value="{! Customer__c.Total_Cost__c }"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+
+
+    </apex:form>
+</apex:page>
