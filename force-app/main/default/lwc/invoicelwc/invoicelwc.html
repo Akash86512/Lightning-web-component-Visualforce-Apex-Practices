@@ -1,0 +1,36 @@
+<template>
+    <lightning-record-view-form
+    record-id={recordId} object-api-name="Customer__c">
+        <div class="invoice">
+            <h1><b><u>Invoice</u></b></h1><br/>
+            <div class="Customer Information">
+                <lightning-output-field field-name="Name">
+                </lightning-output-field>
+                <lightning-output-field field-name="Address__c">
+                </lightning-output-field>
+                <lightning-output-field field-name="Email__c">
+                </lightning-output-field>
+            </div>
+            <div class="Product Details">
+                <lightning-output-field field-name="Product_Name__c">
+                </lightning-output-field>
+                <lightning-output-field field-name="Product_Cost__c">
+                </lightning-output-field>
+            </div>
+            <div class="Delivery Details">
+                <lightning-output-field field-name="Driver_Name__c">
+                </lightning-output-field>
+                <lightning-output-field field-name="Delivery_Charge__c">
+                </lightning-output-field>
+            </div>
+            <div class="Payment Details">
+                <lightning-output-field field-name="Product_Cost__c">
+                </lightning-output-field>
+                <lightning-output-field field-name="Delivery_Charge__c">
+                </lightning-output-field>
+                <lightning-output-field field-name="Total_Cost__c">
+                </lightning-output-field>
+            </div>
+        </div>
+    </lightning-record-view-form>
+</template>
